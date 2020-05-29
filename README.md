@@ -1,0 +1,3 @@
+Documentation for making a custom jupyter widget that I wish was in the official docs. Currently just a jumble of things I figured out, likely far more irreverent and casual than documentation would. Thus it's easier to write the documentation, so I will eventually try to clean up and open a PR to ipywidgets but for now this is much easier and more useful for me. 
+
+beware that I am not sure if everything here is correct...
