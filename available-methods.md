@@ -57,6 +57,12 @@ https://backbonejs.org/#Events-catalog
 
 of these `change` is probably far and away the most useful. 
 
+### Views
+WidgetViews also add:
+- **callbacks**  Create msg callbacks for a comm msg. Used in the `touch` method. Probably don't use this yourself
+- **send**   Send a custom msg associated with this view.
+- **touch**  Use the view method touch instead of model.save_changes to associate the changes with the current view, thus associating any response messages with the view’s cell. (from low level widget tutorial)
+
 
 
 ### Typescript Miscellany
