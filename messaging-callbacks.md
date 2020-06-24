@@ -55,3 +55,30 @@ def _handle_button_msg(self, widget, content, buffers):
 
 
 This also shows how to allow a widget user to add a callback, for that it's easiest to use CallbackDispatcher. I think that this is basically a really fancy list that does some helpful stuff, idk what that helpful stuff and am happy to remain ignorant. 
+
+
+# Message Latency
+I made a widget to test the latency of the widget message system. You can see the full results or try it out for yourself here: https://github.com/ianhi/widget_message_speed#widget_message_speed (the readme has plots!)
+
+but the main result is that there is consistently 50-100 ms of latency both from typescript -> python and vice versa. So if you are trying to animate on something like a `mousemove` event you will be much better off implementing the logic entirely in typescript.
+
+# Message rate limits
+If you send messages very rapidly then you will run into this error:
+```
+IOPub message rate exceeded.
+The notebook server will temporarily stop sending output
+to the client in order to avoid crashing it.
+To change this limit, set the config variable
+`--NotebookApp.iopub_msg_rate_limit`.
+
+Current values:
+NotebookApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+NotebookApp.rate_limit_window=3.0 (secs)
+```
+
+To change these you can start jupyter with a command like:
+```bash
+jupyter lab --NotebookApp.iopub_msg_rate_limt=4000
+```
+
+but you probably shouldn't as these limits are there to prevent crashes. Instead you should re-evaluate your messaging strategy and maybe combine the messages into one larger message. This is the approach taken by ipycanvas which implements a contextmanager to prevent this error https://ipycanvas.readthedocs.io/en/latest/basic_usage.html#optimizing-drawings.
