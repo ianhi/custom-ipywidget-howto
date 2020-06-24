@@ -41,7 +41,8 @@ def click(self):
     widget instance.
     """
     self._click_handlers(self)
-def _handle_button_msg(self, _, content, buffers):
+
+def _handle_button_msg(self, widget, content, buffers):
     """Handle a msg from the front-end.
     Parameters
     ----------
@@ -51,9 +52,6 @@ def _handle_button_msg(self, _, content, buffers):
     if content.get('event', '') == 'click':
         self.click()
 ```
-
-no idea what self.on_msg actually does. Like what is the `_` and what is `buffers`? 
-- see available-methods.md _ is the widget and buggers is binary buffers
 
 
 This also shows how to allow a widget user to add a callback, for that it's easiest to use CallbackDispatcher. I think that this is basically a really fancy list that does some helpful stuff, idk what that helpful stuff and am happy to remain ignorant. 
