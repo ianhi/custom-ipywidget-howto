@@ -18,3 +18,14 @@ if (layout) {
 ```
 Where `this.whatever` is whatever callback you want.
 Above is written to live inside of a view, if instead you want the callback to live in the model then you should swap `this.model.get('layout')` to `this.get('layout')`.
+
+
+# preventing contextmenu
+
+In order to prevent the contextmenu from showing up it is not enough to `preventDefault` you also need to `stopPropagation` in order to prevent the lumino context menu from appearing. See ipympl https://github.com/matplotlib/ipympl/blob/6b44a6f90cf74b12cfcf930b440010984d8a9b4d/js/src/mpl_widget.js#L450-L455 I modified it slightly to make it typescripty:
+```typescript
+this.top_canvas.addEventListener('contextmenu', (e: MouseEvent) {
+            e.preventDefault();
+            e.stopPropagation();
+        });
+```
