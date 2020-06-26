@@ -96,6 +96,8 @@ callback argument isn't necessary, just that in this case its being used to appl
   }
 ```
 
+It's probably better for each view to register a callback with `this.model.on` than to use this as doing so is simpler. I had gravitated towards this because I was worried that the callbacks would continue to be called even after that view was inaccesible - but it turns out this is not the case.
+
 
 # python
 
