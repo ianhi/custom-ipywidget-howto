@@ -6,6 +6,11 @@
 
 An example of linking attributes of two different widgets in the frontend. This is useful because Typescript -> Python -> Typescript can easily take 100ms or more which results in a laggy experience.
 
+
+To accomplish this use the ipywidgets `jslink` function which does some sort of magic for us.
+
+There is also jsdlink which is a directional link
+
 A Custom Jupyter Widget Library
 
 ## Installation
