@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "jslink_custom_widgets/extension": true
+  }
+}
