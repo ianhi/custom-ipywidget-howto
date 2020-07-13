@@ -25,7 +25,8 @@ I'd also recommend including the changes in this PR https://github.com/jupyter-w
 
 If you find something wrong or figure out somethign that isn't in here totally open an issue or a PR and I'll include it. 
 
-# shameless plug
+# shameless plugs
 
-If you want to help make a widget I'm partway through making an image segmentation widget and most discovering these things along the way. If that's interesting feel free to help with it and maybe we can both learn more :) https://github.com/ianhi/ipysegment
+1. If you want to help make a widget I'm partway through making an image segmentation widget and mostly writing stuff here as I discover them things along the way. If that's interesting feel free to help with it and maybe we can both learn more :) https://github.com/ianhi/ipysegment
 
+2. I'm also trying to build better tools for looking at microscopy data in jupyter. This will likely involve making custom widgets https://github.com/ianhi/jupyter-microscopy this would be another low stakes widget playground.
