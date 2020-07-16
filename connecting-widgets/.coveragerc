@@ -1,0 +1,2 @@
+[run]
+omit = connecting_widgets/tests/*
