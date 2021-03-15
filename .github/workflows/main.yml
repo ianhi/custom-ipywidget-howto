@@ -86,7 +86,7 @@ jobs:
         if: steps.filter.outputs.extension == 'true'
         run: |
           cd ${EXAMPLE_FOLDER}
-          jlpm run eslint:check
+          yarn run lint:check
         env:
           EXAMPLE_FOLDER: ${{ matrix.example }}
         shell: bash
