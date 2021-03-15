@@ -5,7 +5,7 @@ const version = require('./package.json').version;
 const rules = [
   { test: /\.ts$/, loader: 'ts-loader' },
   { test: /\.js$/, loader: 'source-map-loader' },
-  { test: /\.css$/, use: ['style-loader', 'css-loader']}
+  { test: /\.css$/, use: ['style-loader', 'css-loader'] },
 ];
 
 // Packages that shouldn't be bundled but loaded at runtime
@@ -13,7 +13,7 @@ const externals = ['@jupyter-widgets/base'];
 
 const resolve = {
   // Add '.ts' and '.tsx' as resolvable extensions.
-  extensions: [".webpack.js", ".web.js", ".ts", ".js"]
+  extensions: ['.webpack.js', '.web.js', '.ts', '.js'],
 };
 
 module.exports = [
@@ -27,11 +27,16 @@ module.exports = [
     entry: './src/extension.ts',
     output: {
       filename: 'index.js',
-      path: path.resolve(__dirname, 'jslink_custom_widgets', 'nbextension', 'static'),
-      libraryTarget: 'amd'
+      path: path.resolve(
+        __dirname,
+        'jslink_custom_widgets',
+        'nbextension',
+        'static'
+      ),
+      libraryTarget: 'amd',
     },
     module: {
-      rules: rules
+      rules: rules,
     },
     devtool: 'source-map',
     externals,
@@ -51,20 +56,20 @@ module.exports = [
   {
     entry: './src/index.ts',
     output: {
-        filename: 'index.js',
-        path: path.resolve(__dirname, 'dist'),
-        libraryTarget: 'amd',
-        library: "jslink-custom-widgets",
-        publicPath: 'https://unpkg.com/jslink-custom-widgets@' + version + '/dist/'
+      filename: 'index.js',
+      path: path.resolve(__dirname, 'dist'),
+      libraryTarget: 'amd',
+      library: 'jslink-custom-widgets',
+      publicPath:
+        'https://unpkg.com/jslink-custom-widgets@' + version + '/dist/',
     },
     devtool: 'source-map',
     module: {
-        rules: rules
+      rules: rules,
     },
     externals,
     resolve,
   },
-
 
   /**
    * Documentation widget bundle
@@ -76,15 +81,14 @@ module.exports = [
     output: {
       filename: 'embed-bundle.js',
       path: path.resolve(__dirname, 'docs', 'source', '_static'),
-      library: "jslink-custom-widgets",
-      libraryTarget: 'amd'
+      library: 'jslink-custom-widgets',
+      libraryTarget: 'amd',
     },
     module: {
-      rules: rules
+      rules: rules,
     },
     devtool: 'source-map',
     externals,
     resolve,
-  }
-
+  },
 ];

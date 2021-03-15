@@ -1,4 +1,3 @@
-
 # connecting-widgets
 
 Exploring how to give access of a widget's typescript model to a different widget. To give `widget1` access to `widget2` the technique is to:
@@ -9,13 +8,11 @@ Exploring how to give access of a widget's typescript model to a different widge
 
 **Important questions:**
 
-Q: Is this good practice?  - A: I have no idea
+Q: Is this good practice? - A: I have no idea
 
 Q: Is this the best way to achieve this? - A: This is the only way I could think of
 
-
 ## Development Installation
-
 
 ```bash
 # First install the python package. This will also build the JS packages.
@@ -43,12 +40,17 @@ you might also need another flag instead of `--sys-prefix`, but we won't cover t
 of those flags here.
 
 ### How to see your changes
+
 #### Typescript:
+
 To continuously monitor the project for changes and automatically trigger a rebuild, start Jupyter in watch mode:
+
 ```bash
 jupyter lab --watch
 ```
+
 And in a separate session, begin watching the source directory for changes:
+
 ```bash
 npm run watch
 ```
@@ -56,4 +58,5 @@ npm run watch
 After a change wait for the build to finish and then refresh your browser and the changes should take effect.
 
 #### Python:
+
 If you make a change to the python code then you will need to restart the notebook kernel to have it take effect.
