@@ -1,2 +1,16 @@
-*.ipynb_checkpoints
-*.swp
+.DS_Store
+*.bundle.*
+lib/
+node_modules/
+*.egg-info/
+.ipynb_checkpoints
+*.tsbuildinfo
+*.lock
+__pycache__
+
+# Ensure embedme does not run on node_modules README.md files.
+**/node_modules/**/README.md
+
+static
+labextension
+nbextension

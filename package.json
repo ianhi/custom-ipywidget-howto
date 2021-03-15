@@ -1,0 +1,34 @@
+{
+  "name": "@jupyter-widgets-examples/all",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "install": "lerna bootstrap",
+    "build-ext": "lerna run build:all",
+    "clean-ext": "lerna run clean",
+    "embedme": "embedme \"[!n]*/**/README.md\"",
+    "install-py": "lerna exec --concurrency 4 -- python -m pip install -e .",
+    "install-ext": "lerna run install:extension",
+    "lint": "yarn && yarn run prettier",
+    "lint:check": "yarn run embedme --verify && yarn run prettier:check",
+    "prettier": "prettier --write \"**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}\"",
+    "prettier:check": "prettier --list-different \"**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "workspaces": {
+    "packages": [
+      "hello-world"
+    ]
+  },
+  "devDependencies": {
+    "embedme": "^1.17.1",
+    "husky": "^4.0.9",
+    "lerna": "^3.18.4",
+    "lint-staged": "^10.5.4",
+    "prettier": "^1.19."
+  }
+}
