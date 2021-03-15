@@ -151,4 +151,5 @@ jobs:
           yarn build-ext
           yarn lint:check
           # Check links as last step as new tutorial may set links not yet valid (like file not yet in master)
-          pytest --check-links
+          # TODO: enable tests
+          # pytest --check-links
