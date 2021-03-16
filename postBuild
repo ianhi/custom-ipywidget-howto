@@ -1,2 +1,2 @@
 yarn
-yarn run build-ext
+yarn run install-py
