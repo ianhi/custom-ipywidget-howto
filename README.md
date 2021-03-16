@@ -1,9 +1,9 @@
 # Custom Jupyter Widgets by Example
 
-[![Github Actions Status](https://github.com/jupyter-widgets/widget-examples/workflows/CI/badge.svg)](https://github.com/jupyter-widgets/widget-examples/actions?query=workflow%3ACI)
+[![Github Actions Status](https://github.com/ianhi/custom-ipywidget-howto/workflows/CI/badge.svg)](https://github.com/ianhi/custom-ipywidget-howto/actions?query=workflow%3ACI)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyterlab/extension-examples/master?urlpath=lab)
 
-The goal of this repository is to show how to develop custom [Jupyter Widgets](https://github.com/jupyter-widgets/widget-examples), presented as short tutorial series.
+The goal of this repository is to show how to develop custom [Jupyter Widgets](https://github.com/ianhi/custom-ipywidget-howto), presented as short tutorial series.
 
 ## What and why
 
@@ -13,7 +13,7 @@ Documentation on how to make a custom jupyter widget. The docs are currently pre
 
 ```bash
 # clone the repository
-git clone https://github.com/jupyter-widgets/widget-examples.git jupyter-widget-examples
+git clone https://github.com/ianhi/custom-ipywidget-howto.git jupyter-widget-examples
 ```
 
 ## Develop by Examples

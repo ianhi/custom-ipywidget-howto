@@ -6,7 +6,7 @@ Developer install
 To install a developer version of hello_world, you will first need to clone
 the repository::
 
-    git clone https://github.com/jupyter-widgets/widget-examples
+    git clone https://github.com/ianhi/custom-ipywidget-howto
     cd hello-world
 
 Next, install it with a develop install using pip::
