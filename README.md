@@ -29,7 +29,17 @@ TODO: add screenshot
 ### Build and Install all the widgets at once
 
 ```bash
-# TODO
+# install the dependencies
+yarn
+
+# install the Python packages
+yarn run install-py
+
+# rebuild the packages
+yarn run build-ext
+
+# (optional) link your development version of the extension with JupyterLab
+yarn run install:ext
 ```
 
 ### Build and Install one Example
@@ -37,7 +47,14 @@ TODO: add screenshot
 Go to the example directory you want to install, e.g. `cd ./hello-world`, and run the following commands:
 
 ```bash
-# TODO
+# install the package in development mode
+python -m pip install -e .
+
+# (optional) link your development version of the extension with JupyterLab
+yarn run install:extension
+
+# rebuild the package
+yarn run build
 ```
 
 ### Change the Sources
@@ -60,6 +77,20 @@ From there, you can change your extension source code, it will be recompiled,
 and you can refresh your browser to see your changes.
 
 We are using [embedme](https://github.com/zakhenry/embedme) to embed code snippets into the markdown READMEs. If you make changes to the source code, ensure you update the README and run `yarn embedme` from the root of the repository to regenerate the READMEs.
+
+### Add a new example
+
+You can use the TypeScript cookiecutter to quickly bootstrap a new custom widget example:
+
+```bash
+# install cookiecutter
+pip install cookiecutter
+
+# create a new custom widget
+cookiecutter https://github.com/jupyter-widgets/widget-ts-cookiecutter
+```
+
+Then answer the prompts to give a new name to the example.
 
 ## Install a Custom Jupyter Widget
 
