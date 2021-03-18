@@ -1,4 +1,4 @@
-// Copyright (c) Ian Hunt-Isaak
+// Copyright (c) 
 // Distributed under the terms of the Modified BSD License.
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires

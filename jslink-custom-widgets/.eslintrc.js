@@ -23,7 +23,6 @@ module.exports = {
     ],
     curly: ['error', 'all'],
     eqeqeq: 'error',
-    'prefer-arrow-callback': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': 'off'
-  },
+    'prefer-arrow-callback': 'error'
+  }
 };

@@ -145,12 +145,12 @@ $RECYCLE.BIN/
 # ----
 
 **/node_modules/
-jslink_custom_widgets/nbextension/static/index.*
-jslink_custom_widgets/labextension/*.tgz
+jslink_custom_widgets2/nbextension/index.*
+jslink_custom_widgets2/labextension/*.tgz
 
 # Coverage data
 # -------------
 **/coverage/
 
 # Packed lab extensions
-jslink_custom_widgets/labextension
+jslink_custom_widgets2/labextension

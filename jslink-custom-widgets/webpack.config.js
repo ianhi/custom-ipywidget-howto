@@ -27,8 +27,9 @@ module.exports = [
     entry: './src/extension.ts',
     output: {
       filename: 'index.js',
-      path: path.resolve(__dirname, 'jslink_custom_widgets', 'nbextension', 'static'),
-      libraryTarget: 'amd'
+      path: path.resolve(__dirname, 'jslink_custom_widgets', 'nbextension'),
+      libraryTarget: 'amd',
+      publicPath: '',
     },
     module: {
       rules: rules
@@ -39,7 +40,7 @@ module.exports = [
   },
 
   /**
-   * Embeddable jslink-custom-widgets bundle
+   * Embeddable jslink-custom-widgets2 bundle
    *
    * This bundle is almost identical to the notebook extension bundle. The only
    * difference is in the configuration of the webpack public path for the

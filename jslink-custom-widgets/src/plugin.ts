@@ -1,4 +1,4 @@
-// Copyright (c) Ian Hunt-Isaak
+// Copyright (c) 
 // Distributed under the terms of the Modified BSD License.
 
 import { Application, IPlugin } from '@phosphor/application';
@@ -11,7 +11,7 @@ import * as widgetExports from './widget';
 
 import { MODULE_NAME, MODULE_VERSION } from './version';
 
-const EXTENSION_ID = 'jslink-custom-widgets:plugin';
+const EXTENSION_ID = 'jslink-custom-widgets2:plugin';
 
 /**
  * The example plugin.

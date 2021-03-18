@@ -99,6 +99,10 @@
         "bundled": false,
         "singleton": true
       }
+    },
+    "_build": {
+      "load": "static/remoteEntry.039c9807dd74b2ffcae6.js",
+      "extension": "./extension"
     }
   }
 }
