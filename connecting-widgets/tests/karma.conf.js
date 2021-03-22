@@ -5,19 +5,14 @@ module.exports = function (config) {
     reporters: ['mocha', 'karma-typescript'],
     client: {
       mocha: {
-        timeout : 10000, // 10 seconds - upped from 2 seconds
-        retries: 3 // Allow for slow server on CI.
-      }
+        timeout: 10000, // 10 seconds - upped from 2 seconds
+        retries: 3, // Allow for slow server on CI.
+      },
     },
-    files: [
-      { pattern: "tests/src/**/*.ts" },
-      { pattern: "src/**/*.ts" },
-    ],
-    exclude: [
-      "src/extension.ts",
-    ],
+    files: [{ pattern: 'tests/src/**/*.ts' }, { pattern: 'src/**/*.ts' }],
+    exclude: ['src/extension.ts'],
     preprocessors: {
-      '**/*.ts': ['karma-typescript']
+      '**/*.ts': ['karma-typescript'],
     },
     browserNoActivityTimeout: 31000, // 31 seconds - upped from 10 seconds
     port: 9876,
@@ -25,22 +20,19 @@ module.exports = function (config) {
     singleRun: true,
     logLevel: config.LOG_INFO,
 
-
     karmaTypescriptConfig: {
       tsconfig: 'tests/tsconfig.json',
       reports: {
-        "text-summary": "",
-        "html": "coverage",
-        "lcovonly": {
-          "directory": "coverage",
-          "filename": "coverage.lcov"
-        }
+        'text-summary': '',
+        html: 'coverage',
+        lcovonly: {
+          directory: 'coverage',
+          filename: 'coverage.lcov',
+        },
       },
       bundlerOptions: {
-        transforms: [
-            require("karma-typescript-es6-transform")()
-        ]
-      }
-    }
+        transforms: [require('karma-typescript-es6-transform')()],
+      },
+    },
   });
 };

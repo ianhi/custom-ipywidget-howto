@@ -1,0 +1,9 @@
+node_modules
+dist
+docs
+**/node_modules
+**/lib
+**/package.json
+**/labextension
+**/nbextension
+**/.pytest_cache
