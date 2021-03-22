@@ -107,10 +107,8 @@ pip install <published_widget>
 
 To learn widgets I recommend the following resources outside this:
 
-1. [Low Level Widget Tutorial](https://github.com/jupyter-widgets/ipywidgets/blob/master/docs/source/examples/Widget%20Low%20Level.ipynb)
-   - [Rendered on readthedocs - less good](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Low%20Level.html)
-     - The images aren't rendering properly for some reason see [this issue](https://github.com/jupyter-widgets/ipywidgets/issues/2908)
-2. Look at widgets made by the people at QuantStack - they know the most about making widgets. Some widgets I have found to be particularly helpful are:
+1. [Low Level Widget Tutorial](https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Low%20Level.html)
+2. Look at existing widgets. Some widgets good widgets to look at are:
    - [ipympl](https://github.com/matplotlib/ipympl)
    - [ipycanvas](https://github.com/martinRenou/ipycanvas)
    - [ipycytoscape](https://github.com/quantstack/ipycytoscape)
