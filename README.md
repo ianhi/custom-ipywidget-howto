@@ -5,9 +5,7 @@
 
 The goal of this repository is to show how to develop custom [Jupyter Widgets](https://github.com/ianhi/custom-ipywidget-howto), presented as short tutorial series.
 
-## What and why
-
-Documentation on how to make a custom jupyter widget. The docs are currently pretty limited on details with creating a custom widget (being worked on - see [here](https://github.com/jupyter-widgets/ipywidgets/issues/2731)). This is probably because its really hard to write good documentation. So here I take the opposite approach, whenever I learn something about widgets I try to write about it here immediately (not worrying about writing it well). So I make no guarantees as to intelligibility or even correctness (though I strive for both). When I don't have the time/motivation to open the files and actually write things down I will put whatever links and scattered thoughts into an [issue](https://github.com/ianhi/custom-ipywidget-howto/issues) so it may be helpful to look at those as well.
+If you feel something is missing or have an idea for a way to improve this please open an [issue](https://github.com/ianhi/custom-ipywidget-howto/issues/new)
 
 ## Getting Started
 
@@ -63,7 +61,7 @@ yarn run build
 
 ### Change the Sources
 
-If you want to develop and iterate on the code, you will need to open 2 terminals.
+If you want to develop and iterate on the code, you willhttps://github.com/ianhi/custom-ipywidget-howto/issues/new need to open 2 terminals.
 
 In terminal 1, go to the extension folder and run the following:
 
@@ -116,14 +114,8 @@ To learn widgets I recommend the following resources outside this:
    - [ipympl](https://github.com/matplotlib/ipympl)
    - [ipycanvas](https://github.com/martinRenou/ipycanvas)
    - [ipycytoscape](https://github.com/quantstack/ipycytoscape)
-3. [QuantStack Gitter](https://gitter.im/QuantStack/Lobby)
-   - They've been very helpful everytime I've asked a question
-
-### Shameless plugs
-
-1. If you want to help make a widget I'm partway through making an image segmentation widget and mostly writing stuff here as I discover them things along the way. If that's interesting feel free to help with it and maybe we can both learn more :) https://github.com/ianhi/ipysegment
-
-2. I'm also trying to build better tools for looking at microscopy data in jupyter. This will likely involve making custom widgets https://github.com/ianhi/jupyter-microscopy this would be another low stakes widget playground.
+3. [Jupyter-widgets Gitter](https://gitter.im/jupyter-widgets/Lobby)
+4. [Jupyter-Widgets Discourse](https://discourse.jupyter.org/c/widgets/46)
 
 ## About Jupyter Widgets
 
