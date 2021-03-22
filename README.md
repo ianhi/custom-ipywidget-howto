@@ -61,7 +61,7 @@ yarn run build
 
 ### Change the Sources
 
-If you want to develop and iterate on the code, you willhttps://github.com/ianhi/custom-ipywidget-howto/issues/new need to open 2 terminals.
+If you want to develop and iterate on the code, you will need to open 2 terminals.
 
 In terminal 1, go to the extension folder and run the following:
 
