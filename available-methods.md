@@ -107,18 +107,19 @@ It's probably better for each view to register a callback with `this.model.on` t
 
 defined in this file: https://github.com/jupyter-widgets/ipywidgets/blob/6be18d9b75353f7b4a1c328c6ea06d8959f978f6/ipywidgets/widgets/widget.py
 which is ultimately a subclass of [traitlets.HasTraits](https://traitlets.readthedocs.io/en/stable/api.html?highlight=HasTraits#traitlets-api-reference)
+
+Methods that are most likely to be useful to custom widget authors are bolded.
+
 **class methods and staticmethods**
 
 - **close_all(cls)** - closes all widgets of a certain class i think?
-- **on_widget_constructed(callback)** - Registers a callback to be called when a widget is constructed.
-  The callback must have the following signature:
-  callback(widget)"""
+- **on_widget_constructed(callback)** - Registers a callback to be called when a widget is constructed. The callback must have signature `callback(widget)`
 - **handle_comm_opened(comm, msg)** - heck if know what this does - don't plan on using.
-- **get_manager_state(drop_defaults=False, widgets=None):** - "Returns the full state for a widget manager for embedding
-  :param drop_defaults: when True, it will not include default value
-  :param widgets: list with widgets to include in the state (or all widgets when None)"" - either this or `get_state` are probably useful for embedding the widget standalone. Use this to get the contents of the script at the bottom of my comment https://github.com/QuantStack/ipycytoscape/issues/80#issuecomment-635470671
+- **get_manager_state(drop_defaults=False, widgets=None):** - "Returns the full state for a widget manager for embedding. This function or `get_state` are probably useful for embedding the widget standalone. Use this to get the contents of the script at the bottom of my comment https://github.com/QuantStack/ipycytoscape/issues/80#issuecomment-635470671
 
-Other functions. Things that seem potentially useful are in bold
+  - With documentation:
+    - `drop_defaults`: when True, it will not include default value
+    - `widgets`: list with widgets to include in the state (or all widgets when None)"" -Other functions. Things that seem potentially useful are in bold
 
 - `open` - "Open a comm to the frontend if one isn't already open" idk when this is necessary
 - **`model_id`** - get the model id of the widget
