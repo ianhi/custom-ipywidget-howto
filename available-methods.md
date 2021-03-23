@@ -1,4 +1,4 @@
-There doesn't seem to be a canonical list of all the functions availiable to Widget objects for either python or typescript. so here is a list of many functions with some questionable commentary by yours truly.
+There doesn't seem to be a canonical list of all the functions available to Widget objects for either python or typescript. so here is a list of many functions with some questionable commentary by yours truly.
 
 # typescript:
 
@@ -20,7 +20,7 @@ stopListening
 listenToOnce
 ```
 
-and `WidgetModel` adds `on_some_change` to this list. see defintion [here](https://github.com/jupyter-widgets/ipywidgets/blob/6be18d9b75353f7b4a1c328c6ea06d8959f978f6/packages/base/src/widget.ts#L528)
+and `WidgetModel` adds `on_some_change` to this list. see definition [here](https://github.com/jupyter-widgets/ipywidgets/blob/6be18d9b75353f7b4a1c328c6ea06d8959f978f6/packages/base/src/widget.ts#L528)
 With documentation:
 
 > `on_some_change(['key1', 'key2'], foo, context)` differs from `on('change:key1 change:key2', foo, context)`. If the widget attributes `key1` and `key2` are both modified, the second form will result in foo being called twice while the first will call foo only once
@@ -101,7 +101,7 @@ callback argument isn't necessary, just that in this case its being used to appl
   }
 ```
 
-It's probably better for each view to register a callback with `this.model.on` than to use this as doing so is simpler. I had gravitated towards this because I was worried that the callbacks would continue to be called even after that view was inaccesible - but it turns out this is not the case.
+It's probably better for each view to register a callback with `this.model.on` than to use this as doing so is simpler. I had gravitated towards this because I was worried that the callbacks would continue to be called even after that view was inaccessible - but it turns out this is not the case.
 
 # python
 
